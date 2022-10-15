@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap');
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #EEEEEE;
+    color:#2F4243;
+    /* text-align: left; */
+}
+
+.head_style{
+    font-size: 3em;
+    text-align: center;
+    padding:50px 0;
+    font-weight: bold;
+    color:#2F4243;
+}
+
+.form_body{
+    padding:20px 0 0 50px;
+    font-size:1.3em;
+}
+
+textarea,input{
+    resize: none;
+    margin-top:20px;
+    padding:10px 10px;
+    /* border:none; */
+    border: none;
+    /* background-color: hsl(0, 13%, 82%); */
+    background-color: #dfdbdb;
+    font-size: 20px;
+}
+
+textarea:focus,input:focus{
+    border-style:dotted;
+    border-color: #2F4243;
+    outline: none;
+}
+
+.a_button{
+    padding:15px 20px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    background-color: #3b4849;
+    color:#EEEEEE;
+    border-radius: 5px;
+}
+
+.a_button:hover{
+    background-color: #1d2a2b;
+}
+
+.element{
+    margin-top:3em;
+    margin-bottom: 3em;
+}
+
+.namimg{
+    margin:.5em 0em;
+}
+
+.textarea_modification{
+    margin-bottom:1em;
+    margin-top:3em;
+}
+
+.element_genre{
+    margin-bottom:0.8em;
+}
+
+.after_submitting_p{
+    font-size: 2em;
+    padding:50px 0 0 50px;
+}
+
+.a_after_button{
+    margin:0 0 0 50px;
+}
+
+.combobox:focus{
+    outline: none;
+}
