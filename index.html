@@ -4,51 +4,78 @@
 <!-- the title will appear on the page-->
 <head>
 <title>Employee Interests Survey</title>
+<link rel = "stylesheet" href = "style.css">
 </head>
 <body>
 <!-- as it is a survey form, we will need to submit the details, hence we use form -->
 <!-- We can give absolute url, or relative url like /nextpage.jsp, and specify POST or GET method -->
-<form action="http://google.co.in">
+<!-- <form action="http://google.co.in"> -->
+<form action = "after_submitting.html">
 <!-- If we remove this, every thing will move to the left of the page-->
-<div align="center">
+<!-- <div align="center"> -->
+<h1 class = "head_style">Employee Interests Survey form</h1>
+<div class = "form_body">
 <!--Adds a heading to the form-->
-<h1>Employee Interests Survey form</h1>
-Enter your name:
+
+<div class = "namimg">
+Enter your name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ensp;&ensp;&ensp;&emsp;&nbsp;
 <!-- Input type text for small texts, specify size -->
 <input type="text" name="UserName" size=35 maxlength=35 value="">
 <!--Adds spaces - remove and see what happens -->
+</div>
 </br></br>
-Enter your department:
+<div class = "namimg">
+Enter your department&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <input type="text" name="Deptt" size=35 maxlength=35 value=""> </br> </br>
-Tell us a little about yourself:
+</div>
+<div class = "textarea_modification">
+Tell us a little about yourself&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <!-- For writing lot of text like descriptions with text wrapping,
 if you dont want text wrapping, you can add wrap = "off" (horizontal scrollbar -->
-<textarea name="Comments" cols=30 rows=4></textarea> </br> </br>
-Do you exercise at home?
+<br>
+<textarea name="Comments" placeholder = "Type about yourself here..." cols=70 rows=10></textarea> </br> </br>
+</div>
+
+<div class = "element">
+Do you exercise at home?  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <!-- Radio buttons help you choose one out of the many values -->
-<input type="radio" name="exe" value=1>Yes
+<input type="radio" name="exe" value=1>Yes&emsp;&emsp;
 <input type="radio" name="exe" value=2>No
+</div>
+
+<div class = "element">
 </p>
-How do you like to read about your favorite topics?
+How do you like to read about your favorite topics?  
 <p>
 <!--Checkbox lets you select multiple options -->
-<input type="checkbox" name="Books">Books
-<input type="checkbox" name="Web">Online resources
-<input type="checkbox" name="Phone">Phone apps
-<input type="checkbox" name="Magazines">Magazines
+<input type="checkbox" name="Books">Books<br>
+<input type="checkbox" name="Web">Online resources<br>
+<input type="checkbox" name="Phone">Phone apps<br>
+<input type="checkbox" name="Magazines">Magazines<br>
 </p>
-What genre of movies do you like?
+</div>
+
+<div class = "element_genre">
+What genre of movies do you like?&emsp;
 <!--Select box lets you choose one of the multiple dropdown options-->
-<select name="moviepref" ><option>
+<select name="moviepref" class="combobox" style="font-size:20px; color:#2F4243; padding:5px 10px;" ><option>
 <option value=1 selected = "true">comedy
 <option value=2 >romance
 <option value=3 >thriller
 <option value=4 >horror
 <option value=5 >biopic
 </select>
-</br></br>
+</div>
+
+
+<!-- </br></br> -->
 <!--submits the information entered in the form by the user -->
-<input type=submit value="Submit form">
+
+<div>
+<input type=submit value="Submit form" class = "a_button">
+</div>
+
+
 </div>
 </form>
 </body>
